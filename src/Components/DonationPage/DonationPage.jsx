@@ -40,10 +40,7 @@ const DonationPage = ({ donations }) => {
           <h2 className="card-title">{title}</h2>
           <p style={DonationTextStyles}>$: {price}</p>
           <div className="card-actions">
-            <button
-              style={DonationCategoryBgColor}
-              className="btn btn-primary border-none"
-            >
+            <button style={DonationCategoryBgColor} className="btn border-none">
               View Details
             </button>
           </div>

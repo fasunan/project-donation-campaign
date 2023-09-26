@@ -18,7 +18,7 @@ const ShowData = ({ data }) => {
           className="card card-compact mt-8 bg-base-100 shadow-xl "
           style={cardStyles}
         >
-          <figure>
+          <figure className="h-[200px]">
             <img src={data.image} alt="" />
           </figure>
           <div className="card-body" style={textStyles}>

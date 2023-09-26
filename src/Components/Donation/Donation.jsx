@@ -18,7 +18,6 @@ const Donation = () => {
 
   return (
     <div>
-      {/* <div>total donate:{donations.length}</div> */}
       {noDonationData ? (
         <p className="h-[80vh] flex justify-center items-center text-xl font-semibold">
           {noDonationData}
@@ -43,7 +42,7 @@ const Donation = () => {
                   ))}
           </div>
           <div className="flex justify-center items-center">
-            {donations.length > 4 && (
+            {donations.length > 4 && !isSeeAll && (
               <button
                 onClick={() => setIsSeeAll(!isSeeAll)}
                 className="btn bg-red-400 mt-8 "

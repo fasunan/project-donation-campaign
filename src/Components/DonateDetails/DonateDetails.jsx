@@ -37,7 +37,7 @@ const DonateDetails = ({ showDetails }) => {
       <div className="max-w-xl bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
         <div>
           <div className="relative">
-            <img className="rounded-t-lg w-full" src={image} alt="" />
+            <img className="rounded-t-lg w-full h-[200px]" src={image} alt="" />
             <div className="absolute inset-0 top-72 bg-black opacity-50"></div>
           </div>
           <Link>
