@@ -14,7 +14,7 @@ const ShowDetails = () => {
 
     SetShowDetails(findDetails);
   }, [id, details]);
-  console.log(showDetails);
+
   return (
     <div className="flex justify-center">
       <DonateDetails showDetails={showDetails}></DonateDetails>

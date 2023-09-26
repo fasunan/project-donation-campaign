@@ -8,7 +8,7 @@
     "card_bg_color": "#79C23F26",
     "text_color": "#79C23F",
     "description": "Your clothing donations can make a significant impact in the lives of people without proper attire. Help us clothe those in need and provide them with dignity and warmth.",
-    "price": "$19.99"
+    "price": 300
   },
   {
     "id": 2,
@@ -19,7 +19,7 @@
     "card_bg_color": "#FF444A26",
     "text_color": "#FF444A",
     "description": "Every child deserves access to education. Your support can help kids achieve their dreams and break the cycle of poverty. Join us in supporting their educational journey.",
-    "price": "$29.99"
+    "price": 200
   },
 
   {
@@ -31,7 +31,7 @@
     "card_bg_color": "#0052FF26",
     "text_color": "#0052FF",
     "description": "Be a health hero by giving the gift of health. Your contribution can help provide medical treatments, vaccinations, and healthcare resources to those in vulnerable communities.",
-    "price": "$49.99"
+    "price": 400
   },
   {
     "id": 4,
@@ -42,7 +42,7 @@
     "card_bg_color": "#F8714726",
     "text_color": "#F87147",
     "description": "Your contribution will provide meals to those facing hunger, ensuring no one goes to bed on an empty stomach. Join us in making a difference today.",
-    "price": "$19.99"
+    "price": 300
   },
 
   {
@@ -54,7 +54,7 @@
     "card_bg_color": "#FF444A26",
     "text_color": "#FF444A",
     "description": " Education empowers individuals and transforms communities. Your donation will empower people to create brighter futures through learning and knowledge.",
-    "price": "$29.99"
+    "price": 500
   },
   {
     "id": 6,
@@ -65,7 +65,7 @@
     "card_bg_color": "#79C23F26",
     "text_color": "#79C23F",
     "description": "Winter is approaching, and many are without warm clothing. Donate your gently-used clothes today and share the warmth of compassion with those less fortunate.",
-    "price": "$19.99"
+    "price": 50
   },
 
   {
@@ -77,7 +77,7 @@
     "card_bg_color": "#F8714726",
     "text_color": "#F87147",
     "description": "By donating to our food drive, you're not just providing nourishment; you're spreading love and hope to families in need. Your generosity can brighten their lives.",
-    "price": "$39.99"
+    "price": 80
   },
   {
     "id": 8,
@@ -88,7 +88,7 @@
     "card_bg_color": "#0052FF26",
     "text_color": "#0052FF",
     "description": "Access to healthcare is a fundamental right. Your support ensures that lives are saved, and individuals receive the medical attention they urgently require.",
-    "price": "$49.99"
+    "price": 600
   },
   {
     "id": 10,
@@ -99,7 +99,7 @@
     "card_bg_color": "#FF444A26",
     "text_color": "#FF444A",
     "description": " Your contribution is a gift that keeps on giving. It provides the gift of learning, opening doors to new opportunities and a brighter future for those in need.",
-    "price": "$29.99"
+    "price": 300
   },
   {
     "id": 9,
@@ -110,7 +110,7 @@
     "card_bg_color": "#79C23F26",
     "text_color": "#79C23F",
     "description": "Be a part of our mission to dress the world kindly. Your clothing donations will help individuals dress confidently, regardless of their circumstances.",
-    "price": "$39.99"
+    "price": 800
   },
 
   {
@@ -122,7 +122,7 @@
     "card_bg_color": "#0052FF26",
     "text_color": "#0052FF",
     "description": "Your donation can make a real difference in healing lives. Join us in providing access to healthcare and medications for those who cannot afford it.",
-    "price": "$49.99"
+    "price": 250
   },
   {
     "id": 12,
@@ -133,6 +133,6 @@
     "card_bg_color": "#F8714726",
     "text_color": "#F87147",
     "description": "Join our mission to fight hunger and food insecurity in our community. Your donation will enable us to distribute essential food items to those struggling to make ends meet.",
-    "price": "$39.99"
+    "price": 1000
   }
 ]

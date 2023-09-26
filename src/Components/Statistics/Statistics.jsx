@@ -1,7 +1,8 @@
-const Statistics = () => {
+const Statistics = ({ totalDonationCount }) => {
+  console.log(totalDonationCount);
   return (
     <div>
-      <h2>this is stat</h2>
+      <h2>total:{totalDonationCount}</h2>
     </div>
   );
 };

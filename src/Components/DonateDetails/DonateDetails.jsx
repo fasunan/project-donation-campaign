@@ -1,9 +1,32 @@
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const DonateDetails = ({ showDetails }) => {
-  const { image, price, title, description, category_bg_color } =
+  const { id, image, price, title, description, category_bg_color } =
     showDetails || {};
+
+  const handleAddDonation = () => {
+    const addDonationArray = [];
+
+    const addDonation = JSON.parse(localStorage.getItem("donations"));
+
+    if (!addDonation) {
+      addDonationArray.push(showDetails);
+      localStorage.setItem("donations", JSON.stringify(addDonationArray));
+      toast.success("Donation Successful!");
+    } else {
+      const isExists = addDonation.find((showDetails) => showDetails.id == id);
+      if (!isExists) {
+        addDonationArray.push(...addDonation, showDetails);
+        localStorage.setItem("donations", JSON.stringify(addDonationArray));
+        toast.success("Donation Successful!");
+      } else {
+        toast.error("Already donated");
+      }
+    }
+  };
 
   const categoryBgColor = {
     backgroundColor: category_bg_color,
@@ -19,6 +42,7 @@ const DonateDetails = ({ showDetails }) => {
           </div>
           <Link>
             <button
+              onClick={handleAddDonation}
               style={categoryBgColor}
               className="btn border-none text-white font-normal text-sm rounded-sm  absolute -mt-14 ml-4"
             >
@@ -38,6 +62,7 @@ const DonateDetails = ({ showDetails }) => {
           </p>
         </div>
       </div>
+      <ToastContainer></ToastContainer>
     </div>
   );
 };
