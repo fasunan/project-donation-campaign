@@ -31,10 +31,15 @@ const DonationPage = ({ donations }) => {
           <img className="w-96" src={image} alt="Movie" />
         </figure>
         <div className="card-body">
-          <p style={DonationTextStyles}>{category}</p>
+          <p
+            className="text-lg font-medium px-2 py-1 w-fit rounded-lg"
+            style={donationCardStyle}
+          >
+            <span style={DonationTextStyles}> {category}</span>
+          </p>
           <h2 className="card-title">{title}</h2>
-          <p style={DonationTextStyles}>{price}</p>
-          <div className="card-actions justify-end">
+          <p style={DonationTextStyles}>$: {price}</p>
+          <div className="card-actions">
             <button
               style={DonationCategoryBgColor}
               className="btn btn-primary border-none"

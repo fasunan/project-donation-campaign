@@ -1,25 +1,16 @@
 import { useEffect, useState } from "react";
 import DonationPage from "../DonationPage/DonationPage";
-import Statistics from "../Statistics/Statistics";
 
 const Donation = () => {
   const [donations, setDonations] = useState([]);
   const [noDonationData, setNoDonationData] = useState(false);
 
   const [isSeeAll, setIsSeeAll] = useState(false);
-  const totalDonationCount = donations.length;
-
-  // const [donationPrice, SetDonationPrice] = useState(0);
 
   useEffect(() => {
     const addDonation = JSON.parse(localStorage.getItem("donations"));
     if (addDonation) {
       setDonations(addDonation);
-      // const totalDonation = addDonation.reduce(
-      //   (preValue, currentDonateValue) => preValue + currentDonateValue.price,
-      //   0
-      // );
-      // SetDonationPrice(totalDonation);
     } else {
       setNoDonationData("Please donate First");
     }
@@ -55,7 +46,7 @@ const Donation = () => {
             {donations.length > 4 && (
               <button
                 onClick={() => setIsSeeAll(!isSeeAll)}
-                className="btn bg-red-400 "
+                className="btn bg-red-400 mt-8 "
               >
                 See All
               </button>
@@ -63,7 +54,6 @@ const Donation = () => {
           </div>
         </div>
       )}
-      {<Statistics totalDonationCount={totalDonationCount}></Statistics>}
     </div>
   );
 };

@@ -5,9 +5,9 @@ const ShowData = ({ data }) => {
   const cardStyles = {
     backgroundColor: data.card_bg_color,
   };
-  //   const categoryBgColor = {
-  //     backgroundColor: data.category_bg_color,
-  //   };
+  const categoryBgColor = {
+    backgroundColor: data.category_bg_color,
+  };
   const textStyles = {
     color: data.text_color,
   };
@@ -22,7 +22,12 @@ const ShowData = ({ data }) => {
             <img src={data.image} alt="" />
           </figure>
           <div className="card-body" style={textStyles}>
-            <h4 className="text-sm font-medium"> {data.category}</h4>
+            <h4
+              className="text-sm font-medium px-2 py-1 w-fit rounded-lg"
+              style={categoryBgColor}
+            >
+              {data.category}
+            </h4>
             <h2 className="card-title">{data.title}</h2>
           </div>
         </div>
