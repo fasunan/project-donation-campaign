@@ -1,21 +1,23 @@
 import { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
-import ShowIdDetails from "../ShowIdDetails/ShowIdDetails";
+import DonateDetails from "../DonateDetails/DonateDetails";
 
 const ShowDetails = () => {
-  const [showDetails, setShowDetails] = useState([]);
+  const [showDetails, SetShowDetails] = useState({});
 
   const { id } = useParams();
 
   const details = useLoaderData();
 
   useEffect(() => {
-    const findId = details?.find((showId) => showId.id === id);
-    setShowDetails(findId);
+    const findDetails = details?.find((detail) => detail.id == id);
+
+    SetShowDetails(findDetails);
   }, [id, details]);
+  console.log(showDetails);
   return (
-    <div>
-      <ShowIdDetails showDetails={showDetails}></ShowIdDetails>
+    <div className="flex justify-center">
+      <DonateDetails showDetails={showDetails}></DonateDetails>
     </div>
   );
 };
