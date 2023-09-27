@@ -24,7 +24,7 @@ const Banner = ({ handleSearch, setSearch, search }) => {
                 />
                 <button
                   type="submit"
-                  className="btn bg-[#FF444A] text-white font-bold py-2 px-4 rounded"
+                  className="btn bg-[#FF444A] text-white font-bold py-2 px-4 rounded mb-4"
                 >
                   Search
                 </button>

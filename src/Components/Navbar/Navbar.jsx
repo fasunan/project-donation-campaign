@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom";
-// import Banner from "./Banner/Banner";
 
 const Navbar = () => {
   return (
@@ -7,7 +6,7 @@ const Navbar = () => {
       <div>
         <nav className="flex justify-between items-center py-6  px-5 text-lg font-bold mr-5 ml-5">
           <div className="w-[110px]">
-            <img src="/public/assets/Logo.png" alt="" />
+            <img src="/assets/Logo.png" alt="" />
           </div>
           <ul className="flex gap-5">
             <li>
@@ -55,7 +54,6 @@ const Navbar = () => {
             </li>
           </ul>
         </nav>
-        {/* <Banner></Banner> */}
       </div>
     </div>
   );

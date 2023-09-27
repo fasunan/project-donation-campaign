@@ -4,14 +4,14 @@ import Banner from "../Navbar/Banner/Banner";
 
 const AllData = () => {
   const [allData, setAllData] = useState([]);
-  // const [searchCategory, setSearchCategory] = useState([]);
+
   const [search, setSearch] = useState("");
 
   useEffect(() => {
     fetch("data.json")
       .then((res) => res.json())
       .then((data) => setAllData(data));
-  }, []);
+  }, [allData]);
 
   const handleSearch = (e) => {
     e.preventDefault();
@@ -19,6 +19,7 @@ const AllData = () => {
       const categoryData = allData?.filter(
         (donation) => donation.category === search
       );
+
       setAllData(categoryData);
       console.log(categoryData);
       console.log(search);

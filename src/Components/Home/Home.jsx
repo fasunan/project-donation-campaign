@@ -1,13 +1,11 @@
-import AllData from "../AllData/AllData";
-// import Banner from "../Navbar/Banner/Banner";
+// import AllData from "../AllData/AllData";
 
-const Home = () => {
-  return (
-    <div>
-      {/* <Banner></Banner> */}
-      <AllData></AllData>
-    </div>
-  );
-};
+// const Home = () => {
+//   return (
+//     <div>
+//       <AllData></AllData>
+//     </div>
+//   );
+// };
 
-export default Home;
+// export default Home;

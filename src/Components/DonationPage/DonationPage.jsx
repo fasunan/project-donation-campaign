@@ -21,7 +21,7 @@ const DonationPage = ({ donations }) => {
         style={donationCardStyle}
       >
         <figure>
-          <img className="h-[225px] w-[400px]" src={image} alt="Movie" />
+          <img className="h-[250px] w-[300px]" src={image} alt="Movie" />
         </figure>
         <div className="card-body">
           <p
