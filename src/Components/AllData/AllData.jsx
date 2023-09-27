@@ -5,13 +5,14 @@ import Banner from "../Navbar/Banner/Banner";
 const AllData = () => {
   const [allData, setAllData] = useState([]);
   // const [searchCategory, setSearchCategory] = useState([]);
-  // console.log(allData)
+  const [search, setSearch] = useState("");
+
   useEffect(() => {
     fetch("data.json")
       .then((res) => res.json())
       .then((data) => setAllData(data));
   }, []);
-  const [search, setSearch] = useState("");
+
   const handleSearch = (e) => {
     e.preventDefault();
     if (search) {
