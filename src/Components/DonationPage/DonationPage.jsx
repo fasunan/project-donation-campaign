@@ -1,21 +1,14 @@
 import PropTypes from "prop-types";
 
 const DonationPage = ({ donations }) => {
-  const {
-    image,
-    title,
-    price,
-    category,
-    card_bg_color,
-    text_color,
-    category_bg_color,
-  } = donations;
+  const { image, title, price, category, card_bg_color, text_color } =
+    donations;
 
   const donationCardStyle = {
     backgroundColor: card_bg_color,
   };
   const DonationCategoryBgColor = {
-    backgroundColor: category_bg_color,
+    backgroundColor: text_color,
   };
   const DonationTextStyles = {
     color: text_color,
@@ -24,11 +17,11 @@ const DonationPage = ({ donations }) => {
   return (
     <div>
       <div
-        className="card card-side bg-base-100 shadow-xl "
+        className="card h-[200] card-side bg-base-100 shadow-xl "
         style={donationCardStyle}
       >
         <figure>
-          <img className="w-96" src={image} alt="Movie" />
+          <img className="h-[225px] w-[400px]" src={image} alt="Movie" />
         </figure>
         <div className="card-body">
           <p

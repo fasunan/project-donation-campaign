@@ -6,7 +6,7 @@ const Statistics = () => {
 
   useEffect(() => {
     const addDonationStat = JSON.parse(localStorage.getItem("donations"));
-    setDonationsStat(addDonationStat);
+    setDonationsStat(addDonationStat || []);
   }, []);
 
   const allDonation = donationsStat.length;
@@ -29,7 +29,7 @@ const Statistics = () => {
             innerRadius={0}
             outerRadius={120}
             fill="#8884d8"
-            label={donationInPercent}
+            label={(entry) => `${entry.name} ${entry.value}%`}
           >
             {data.map((entry, index) => (
               <Cell

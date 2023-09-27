@@ -4,7 +4,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const DonateDetails = ({ showDetails }) => {
-  const { id, image, price, title, description, category_bg_color } =
+  const { id, image, price, title, description, text_color } =
     showDetails || {};
 
   const handleAddDonation = () => {
@@ -28,8 +28,8 @@ const DonateDetails = ({ showDetails }) => {
     }
   };
 
-  const categoryBgColor = {
-    backgroundColor: category_bg_color,
+  const categoryBgColorBtn = {
+    backgroundColor: text_color,
   };
 
   return (
@@ -37,16 +37,16 @@ const DonateDetails = ({ showDetails }) => {
       <div className="max-w-xl bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
         <div>
           <div className="relative">
-            <img className="rounded-t-lg w-full h-[200px]" src={image} alt="" />
+            <img className="rounded-t-lg w-full" src={image} alt="" />
             <div className="absolute inset-0 top-72 bg-black opacity-50"></div>
           </div>
           <Link>
             <button
               onClick={handleAddDonation}
-              style={categoryBgColor}
+              style={categoryBgColorBtn}
               className="btn border-none text-white font-normal text-sm rounded-sm  absolute -mt-14 ml-4"
             >
-              Donate {price}
+              Donate: ${price}
             </button>
           </Link>
         </div>

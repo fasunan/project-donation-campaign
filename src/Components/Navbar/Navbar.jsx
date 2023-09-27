@@ -5,9 +5,9 @@ const Navbar = () => {
   return (
     <div>
       <div>
-        <nav className="flex justify-between items-center py-6  px-5 text-lg font-bold bg-">
-          <div className="w-24">
-            <img src="/src/assets/Logo.png" alt="" />
+        <nav className="flex justify-between items-center py-6  px-5 text-lg font-bold mr-5 ml-5">
+          <div className="w-[110px]">
+            <img src="/public/assets/Logo.png" alt="" />
           </div>
           <ul className="flex gap-5">
             <li>

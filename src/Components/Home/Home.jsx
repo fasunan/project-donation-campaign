@@ -1,10 +1,10 @@
 import AllData from "../AllData/AllData";
-import Banner from "../Navbar/Banner/Banner";
+// import Banner from "../Navbar/Banner/Banner";
 
 const Home = () => {
   return (
     <div>
-      <Banner></Banner>
+      {/* <Banner></Banner> */}
       <AllData></AllData>
     </div>
   );

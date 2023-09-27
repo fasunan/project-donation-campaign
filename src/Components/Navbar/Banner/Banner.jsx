@@ -1,5 +1,5 @@
-import bannerImage from "../../../assets/banner.jpg";
-const Banner = () => {
+import bannerImage from "../../../../public/assets/banner.jpg";
+const Banner = ({ handleSearch, setSearch, search }) => {
   return (
     <div>
       <div
@@ -13,16 +13,23 @@ const Banner = () => {
               I Grow By Helping People In Need
             </h1>
 
-            <div className="mt-4">
-              <input
-                type="text"
-                placeholder="Search here..."
-                className="px-4 py-2 rounded-l-lg outline-1  w-64"
-              />
-              <button className="bg-[#FF444A] text-white font-bold py-2 px-4 rounded">
-                Search
-              </button>
-            </div>
+            <form onSubmit={handleSearch}>
+              <div className="mt-4">
+                <input
+                  value={search}
+                  onChange={(e) => setSearch(e.target.value)}
+                  type="text"
+                  placeholder="Search here..."
+                  className="px-4 py-2 rounded-l-lg outline-1  w-64 text-black"
+                />
+                <button
+                  type="submit"
+                  className="btn bg-[#FF444A] text-white font-bold py-2 px-4 rounded"
+                >
+                  Search
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
